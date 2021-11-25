@@ -10,7 +10,7 @@ findPrimeNum <- function(specifiedRange) {
     } else {
         primeNum <- c(2, 3, 5)
         for (num in 6:specifiedRange) {
-            if (num %% 2 == 0 | num %% 5 == 0 | digitSum(num) %% 3 == 0) {
+            if (num %% 2 == 0 | num %% 5 == 0 | getDigitSum(num) %% 3 == 0) {
                 next
             } else if (isPrimeNumber(num)) {
                 primeNum <- append(primeNum, num)
